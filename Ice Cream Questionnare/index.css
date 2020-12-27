@@ -1,0 +1,82 @@
+* {
+    font-family: cursive;
+    border-radius: 10px;
+  }
+  
+  body {
+      background: repeating-linear-gradient(-60deg, #484452,  #484452 7%, #C7AFBD 7%, #C7AFBD 14%, #F8F2DA 14%,  #F8F2DA 21%, #DDECEF 21%, #DDECEF 28%)
+  }
+  
+  header {
+    background: #3dd4b9;
+    box-shadow: 0 0 15px black;
+  }
+  
+  #title {
+    text-align: center;
+    color: #d43d85;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 3rem;
+    padding-top: 0.25rem;
+  }
+  
+  #description {
+    color: seashell;
+    width: 70vw;
+    margin: auto;
+    padding-bottom: 0.5rem;
+  }
+  
+  #survey-form {
+    display: flex;
+    flex-direction: column;
+    width: 54vw;
+    padding: 4vw;
+    margin: 10vh auto;
+    background: white;
+    border: 7px solid #3dd4b9;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+  }
+  
+  #name-label, #email-label, #number-label, #flavor-label, #comments-label, legend {
+    color: #d43d95;
+    font-size: 1.25rem;
+  }
+  
+  input, select {
+    border: solid grey;
+    border-width: 0 0 3px 0;
+  }
+  
+  textarea {
+    border: solid grey;
+    border-width: 0 3px;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    outline: 0;
+  }
+  
+  fieldset {
+    line-height: 30px;
+  }
+  
+  #submit {
+    font-size: 2rem;
+    color: white;
+    padding: 5vh;
+    background-color: #3dd4b9;
+    border: 0;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    #survey-form {
+      width: 80vw;
+    }
+    
+    select {
+      background: white;
+    }
+  } 

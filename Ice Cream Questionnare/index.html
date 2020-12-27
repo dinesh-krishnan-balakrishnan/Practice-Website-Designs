@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ice Cream!</title>
+    <link rel='stylesheet' href='index.css'>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">What's Your Favorite Ice Cream Flavor?</h1>
+      <p id="description">&emsp;&emsp;There are a limitless amount of ice cream flavors
+      currently existent and to soon be created. With a limitless amount of
+      flavors, there are a limitless amount of opinions. Help find out the
+      most loved flavor by answering this short form. </p>
+    </header>
+
+    <form id='survey-form'>
+      <label for="name" id="name-label">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Name" required><br>
+
+      <label for="email" id="email-label">Email:</label><br>
+      <input type="email" id="email" name="email"placeholder="Email" required><br>
+
+      <label for="age" id="number-label">Age:</label><br>
+      <input type="number" min="0" max="99" id="number" name="age" placeholder="0 - 100"
+        required><br>
+
+      <label for="dropdown" id="flavor-label">Favorite Flavor:</label><br>
+      <select id="dropdown" required>
+        <option value="Vanilla">Vanilla</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Strawberry">Strawberry</option>
+        <option value="Mango">Mango</option>
+        <option value="CookiesCreme">Cookies & Creme</option>
+        <option value="CookieDough">Cookie Dough</option>
+        <option value="Mint">Mint</option>
+        <option value="Buttersotch">Buttersotch</option>
+        <option value="Fudge">Fudge</option>
+      </select><br>
+
+      <fieldset>
+        <legend>Toppings:</legend>
+
+        <label><input type="checkbox" name="checkbox" value="Gumdrops">Gum Drops</label><br>
+        <label><input type="checkbox" value="Sprinkles">Sprinkles</label><br>
+        <label><input type="checkbox" value="Caramel">Caramel</label><br>
+        <label><input type="checkbox" value="HotFudge">Hot Fudge</label><br>
+        <label><input type="checkbox" value="Oreo">Oreo</label><br>
+        <label><input type="checkbox" value="WhippedCream">Whipped Cream</label><br>
+        <label><input type="checkbox" value="CookieDough">Cookie Dough</label><br>
+        <label><input type="checkbox" value="MandMs">M&amp;M&apos;s</label><br>
+        <label><input type="checkbox" value="Strawberries"> Strawberries</label><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Favorite Type:</legend>
+
+        <label><input type="radio" name="radio" value="Dessert" required>Frozen Dessert</label><br>
+        <label><input type="radio" name="radio" value="Milk">Milk Ice Cream</label><br>
+        <label><input type="radio" name="radio" value="Stretchy">Stretchy</label><br>
+        <label><input type="radio" name="radio" value="Milkshake">Milkshake</label><br>
+        <label><input type="radio" name="radio" value="Melted">Melted</label><br>
+    </fieldset><br>
+
+    <label for="comments" id="comments-label">Additional Comments:</label><br>
+    <textarea rows="6">Anything I possibly missed?</textarea><br><br>
+
+    <button type="submit" id="submit">Complete</button>
+
+    </form>
+  </body>
+</html>
