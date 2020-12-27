@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v9/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  
+body, figure {
+    margin: 0;
+}
+  
+body {
+    font-family: 'Lato', sans-serif;
+    background: ghostwhite;
+}
+  
+#header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    margin-top: -15vh;
+    border-bottom: 4px solid; 
+    z-index: 2;
+}
+  
+#nav-bar {
+    display: flex;
+    jusity-content: flex-end;
+    align-items: center;
+    padding-top: 18vh;
+    margin-top: -18vh;
+}
+  
+#name {
+    position: absolute;
+    top: 1vh;
+    left: 10vw;
+    color: #015249;
+}
+  
+#header-img {
+    height: 6rem;
+}
+  
+.nav-link {
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #77C9D4;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+}
+  
+#services {
+    margin-top: 6rem;
+    height: 82vh;
+    background: linear-gradient(35deg, #77C9D4, #57BC90);
+}
+  
+#video {
+    height: 100%;
+    width: 50vw;
+    float: left;
+}
+  
+#caption {
+    text-align: right;
+    line-height: calc(6vh + 10px);
+    font-family: 'Roboto Slab';
+    font-size: 6vh;
+    color: white;
+    padding: 0 5vw 0 55vw;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+#title, #packages {
+    background: ghostwhite;
+    text-align: center;
+    margin: 0;
+}
+  
+#title {
+    font-size: 3rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: linear-gradient(35deg, #77C9D4, #57BC90);
+}
+  
+#packages {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+  
+.package img {
+    width: 12rem;
+}
+  
+#form {
+    text-align: center;
+    padding: 0.5rem 0 2.5rem 0;
+    margin: 0;
+    background: linear-gradient(35deg, #77C9D4, #57BC90);
+}
+  
+#contact {
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+  
+#email {
+    width: 15rem;
+    height: 2rem;
+    border: 3px solid white;
+}
+  
+#email::placeholder {
+    font-size: 1.7rem;
+    position: relative;
+    top: 0.3rem;
+}
+  
+#submit {
+    font-size: 1.2rem;
+    color: white;
+    height: 2.5rem;
+    width: 6rem;
+    border: 0;
+    background-color: #77C9D4;
+    position: relative;
+    top: 0.15rem;
+}
+  
+@media only screen and (max-width: 500px) {
+    #header {
+      display: block;
+      margin-top: -6rem;
+    }
+    
+    #header-img {
+      margin: auto;
+    }
+    
+    #name {
+      position: absolute;
+      left: 10rem;
+    }
+    
+    .nav-link {
+      color: green;
+      font-weight: 600;
+      margin: auto;
+      background: none;
+    }
+    
+    #packages {
+      display: block;
+    }
+}
