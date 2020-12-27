@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+  margin: 0;
+  
+  /*Prevent Margin Collapsing*/
+  padding-top: 1px;
+  margin-top: -1px;
+}
+
+a:hover {
+  color: maroon;
+}
+
+#main-navbar {
+  /* Navigation Bar */
+  background: teal;
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: max(6vh, 30px);
+  padding: 10px;
+  z-index: 2;
+  box-shadow: 0 2px 8px black;
+  
+  /*Font Style & Position*/
+  font-family: 'Josefin Sans', sans-serif;
+  align-items: center;
+}
+
+.page-link {
+  /*Positioning*/
+  flex-grow: 1;
+  font-size: 130%;
+  
+  /*Style*/
+  border-left: 2px solid coral;
+}
+
+#title {
+  /* Positioning */
+  margin-left: 5vw;
+  flex-grow: 4;
+  font-size: 250%;
+  
+  /*Style*/
+  color: white;
+  border: none;
+}
+
+#main-doc {
+  /*Align with Navigation Bar*/
+  margin-top: calc(max(6vh, 30px) + 20px);
+  
+  display: flex;
+}
+
+#navbar {
+  /*Navigation Bar*/
+  width: max(50vw, 40px);
+  padding: 0 10px;
+  background: orange;
+  box-shadow: 3px 0 8px black;
+  
+  /*Font Style*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 900;
+ }
+
+#ToC {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+span {
+  color: teal;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  line-height: 2;
+}
+
+article {
+  margin: 10px 0 0 10px;
+  font-family: 'Abel', sans-serif; 
+}
+
+.main-section header {
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: 4px solid teal;
+}
+
+.anchor {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: calc(max(6vh, 30px) * -1 - 20px);
+}
