@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v10/XRXV3I6Li01BKofINeaB.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  #main {
+    font-size: 25px;
+    font-family: Nunito;
+  }
+  body, #title, #img-div{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #title, h2, p {
+    background: linear-gradient(45deg, red, red 25%, gold 25%, gold 50%, green 50%, green 75%, blue 75%, blue 100%);
+  }
+  
+  #title {
+    font-family: 'Nunito';
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+  }
+  
+  #image {
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+    display: block;
+  }
+  
+  #img-caption {
+    color: darkslategrey;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    top: -3rem;
+    margin-bottom: -2rem;
+  }
+  
+  #tribute-info {
+    width: 40rem;
+    max-width: 100%;
+    margin: auto;
+    line-height: 2;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+  
+  #tribute-link {
+    color: white;
+  }
+  
